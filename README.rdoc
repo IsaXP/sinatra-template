@@ -1,19 +1,41 @@
 = Sinatra Application Template
-tommy chheng
-- forked from zapnap/sinatra-template, removed datamapper + rspec.
+VV.Sinatra
+
+If you are looking for a version with datamapper + rspec check out: zapnap/sinatra-template
+Or simpler version without those from tc/sinatra-template
 
 ----
-A base Sinatra application template. Just fork and build. Yay!
-Includes Haml all ready to go.
+A base Sinatra application template. 
 
 == Configuration
-Add gems to Gemfile
+Use ruby envriourment for less messy work. Check out <code>rvm</code> or <code>rbenv</code>  
 
-Add your controller actions in <tt>application.rb</tt>. Views for these actions are placed in the <tt>views</tt> directory. Static files, including a stock stylesheet, go in the <tt>public</tt> directory. Models go in the <tt>lib</tt> directory and are auto-loaded. 
+Add gems to Gemfile
+<code>bundle</code>
+
+Add your controller actions in <tt>app/controllers/app.rb</tt>.  			
+
+Views for these actions are placed in the <tt>app/views</tt> directory. 		   
+
+Static files, including a stock stylesheet, go in the <tt>public/</tt> directory.    
+
+Models go in the <tt>lib/</tt> directory and are auto-loaded.   
+
+===Deployment
+
+Check <code>Capfile</code> and <code>/config/deploy.rb</code> . For more information, make sure you are familiar with [capistrano's Getting Started](https://github.com/capistrano/capistrano/wiki/2.x-Getting-Started)  
 
 == Testing
+	
 TODO
 
 == Getting Started
-run using 
-shotgun config.ru -p 4567
+=== Development 
+run using:
+<code>
+	shotgun config.ru -p 4567
+</code>
+
+=== Production
+
+<code>cap deploy</code> to deploy with passenger. For nginx's commands check out admin in <code>deploy.rb</code>

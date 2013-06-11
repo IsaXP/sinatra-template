@@ -1,0 +1,52 @@
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+body {
+	background: url(../img/bg_dark.png);
+	color: #ccc
+}
+
+.hero-unit {
+	color: #000;
+}
+.vv {   
+	position: absolute;
+    width: 100%;
+    left: 0;
+    text-align: center;
+    margin: auto;
+    top: -1.5em;
+
+}
+.logo {
+	background: url(../img/vv-et-small.png);
+}
+.goodbox {
+	background: #ccc;
+	color: #000;
+	margin: auto;
+	padding: 20px;
+	top: -1em;
+	height: 100%;
+}
+.goodrect {
+	background: #e0e0e0;
+}
+
+.pushdowncol {
+	margin-top: 1.5em;
+}
+/* margin-left for columns from 30/-30px to 20/-20 and from 20 @media to 15 */
+
+.centered {
+	margin: auto;
+}
+
+.centered img {
+	margin: auto;
+}
+.verdiv {
+	border-left: 1px solid #fff;
+}
