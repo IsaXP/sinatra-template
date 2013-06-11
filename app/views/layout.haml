@@ -9,13 +9,13 @@
     %script{:type => "text/javascript", :src => "/js/vendor/bootstrap.js"}   
     %script{:type => "text/javascript", :src => "/js/main.js"}
   %body
-    .container_12
-      .grid_12
+    .container
+      .span12
         #header
           #logo
             %h1
               %a{:href => '/'}= SiteConfig.title
-      .grid_12= yield
+      .span12= yield
       .clear
-      .grid_12
+      .span12
         %p#legal= "&mdash; &copy; #{Time.now.strftime('%Y')} #{SiteConfig.author} &mdash;"
